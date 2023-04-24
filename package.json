@@ -41,5 +41,9 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/LucianoAvilaDev/vue-quizz-game.git",
+  "author": "LucianoAvilaDev <luciano.avila.dev@outlook.com>",
+  "license": "MIT"
 }

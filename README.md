@@ -1,24 +1,12 @@
-# vue-quizz-game
+# Simple VUE.js Quizz Game
 
-## Project setup
-```
-yarn install
-```
+- Aplicação simples de perguntas e respostas para estudo de Vue utilizando o CLI e realizando requisições com Axios.
+- As perguntas foram obtidas na API [Open Trivia Database](https://opentdb.com/api_config.php)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Instalações
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- [Node.js](https://nodejs.org/en/download)
+- Yarn: **npm install -g yarn**
+- Vue-CLI: **yarn global add @vue/cli**
+- Axios: **yarn add axios**
+- VueAxios: **yarn add vue-axios**

@@ -16,7 +16,7 @@
 - São geradas perguntas realizando a busca na API [Open Trivia Database](https://opentdb.com/api_config.php)
 - Cada acerto o Player ganha 1 ponto, cada erro o Computer ganha 1 ponto
 - Após responder a pergunta, clique Next Question para gerar uma nova pergunta
-- Seguem abaixo screeshots da aplicação:
+- Seguem abaixo screenshots da aplicação:
   
 <br>
 <img src="./samples/sample01.png">

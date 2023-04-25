@@ -28,7 +28,7 @@
         <template v-else>
           <h4>&#10060;  Wrong pick, pal! Correct answer is "{{ this.correctAnswer }}".</h4>
         </template>
-        <button @click="this.getNewQuestion()" class="send" type="button">Próxima pergunta</button>
+        <button @click="this.getNewQuestion()" class="send" type="button">Next Question</button>
       </section>
     
     </template>
@@ -95,7 +95,7 @@ export default {
       })
     }
   },
-  
+
   created(){
     this.getNewQuestion()
   }

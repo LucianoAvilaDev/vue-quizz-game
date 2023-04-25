@@ -1,6 +1,8 @@
 <template>
   <div>
 
+    <ScoreBoard :winCount="this.winCount" :loseCount="this.loseCount" />
+
     <template v-if="question">
      
       <h1 v-html="this.question"> 
@@ -36,8 +38,14 @@
 
 <script>
 
+import ScoreBoard from "./components/ScoreBoard.vue"
+
 export default {
   name: 'App',
+
+  components: {
+    ScoreBoard
+  },
   
   data() {
     return {
@@ -45,10 +53,12 @@ export default {
       incorrectAnswers: [],
       correctAnswer: undefined,
       chosenAnswer: undefined,
-      answerSubmitted: false
-      
+      answerSubmitted: false,
+      winCount: 0,
+      loseCount: 0,
     }
   },
+
   computed: {
     answers(){
       var answers = JSON.parse(JSON.stringify(this.incorrectAnswers)) //para evitar erro de replicação de dados
@@ -56,6 +66,7 @@ export default {
       return answers
     }
   },
+
   methods: {
     submitAnswer(){
       if(!this.chosenAnswer){
@@ -65,10 +76,10 @@ export default {
         this.answerSubmitted = true
 
         if(this.chosenAnswer == this.correctAnswer){
-          alert("You're goddamn right")
+          this.winCount++
         }
         else{
-          alert("Wrong pick, pal")
+          this.loseCount++
         }
       }
     },
@@ -84,6 +95,7 @@ export default {
       })
     }
   },
+  
   created(){
     this.getNewQuestion()
   }
